@@ -1,0 +1,96 @@
+/*** IMAGES SECTION ***/ 
+.c-images__container {
+    flex-direction: column;
+
+    .c-images--500 {
+        height: 31.25rem;
+    }
+
+    .c-images--300 {
+        height: 18.75rem;
+    }
+
+    .c-images--200 {
+        height: 12.5rem;
+    }
+}
+
+/*** FEATURED PRODUCT & RECENT PRODUCT SECTION ***/ 
+.c-content {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+
+    @media (max-width: $mobile-sm) {
+        flex-direction: column;
+    }
+    
+    h3 {
+        font-size: 2rem;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 700;
+
+        @media (max-width: $mobile-sm) {
+            margin-block-end: 1rem;
+            text-align: center;
+        }
+    }
+
+    p {
+        font-size: 1.8rem;
+        padding: 0.3rem 1rem;
+
+        &:hover {
+            border: 1px solid var(--color-black);
+        }
+    }
+
+    .c-input {
+        input {
+            padding: 0.8rem 0.5rem;
+            width: 18vw;
+            border-radius: 0.2rem 0 0 0.2rem;
+
+            @media (max-width: $mobile-sm) {
+                width: 50vw;
+            }
+        }
+
+        button {
+            padding: 0.738rem;
+            border-radius: 0 0.2rem 0.2rem 0;
+            margin-inline-start: -1rem;
+        }
+    }
+}
+
+.c-product {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    @media (max-width: $mobile-sm) {
+        flex-direction: column;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
+
+
+/*** TESTIMONIAL SLIDER ***/ 
+.c-testimonial__container {
+    margin-block-start: 2rem;
+}
+    
+.c-testimonial__content {
+    margin: 0 2rem;
+    .c-icon__container {
+        margin-block-start: 0.2rem;
+
+        .c-icon {
+            margin: 0;
+        }
+    }
+}
